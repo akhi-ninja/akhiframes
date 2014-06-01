@@ -1,0 +1,37 @@
+/**
+* Rhinoslider 1.05
+* http://rhinoslider.com/
+*
+* Copyright 2012: Sebastian Pontow, Rene Maas (http://renemaas.de/)
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* http://rhinoslider.com/license/
+*/
+.rhinoslider {width:440px; height:260px;
+/*IE bugfix*/
+padding:0; margin:0;}
+.rhinoslider li { list-style:none; }
+.rhino-btn { background:url(../images/rhinoslider-sprite.png) 0 0 no-repeat; z-index:10; width:27px; height:27px; display:block; text-indent:-999%; -webkit-user-select:none; -moz-user-select:none; user-select:none; border:1px solid #000; -webkit-transition: background-position 150ms ease-in; -moz-transition: background-position 150ms ease-in; -o-transition: background-position 150ms ease-in; transition: background-position 150ms ease-in; }
+.rhino-prev, .rhino-next { top:50%; margin-top:-14px; }
+.rhino-prev { left:10px; background-position:0 0;}
+.rhino-next { right:10px; background-position:-27px -27px;}
+.rhino-prev:hover { background-position:-27px 0; }
+.rhino-next:hover { background-position:0 -27px; }
+.rhino-toggle { top:50%; margin-top:-14px; left:38px;  background-position:-27px -54px; }
+.rhino-toggle:hover { background-position:0 -54px; }
+.rhino-container { position:relative; }
+body.dark .rhino-container {border: 10px solid black; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-box-shadow:0 4px 10px rgba(0,0,0,0.5); -moz-box-shadow:0 4px 10px rgba(0,0,0,0.5); box-shadow:0 4px 10px rgba(0,0,0,0.5);}
+body.light .rhino-container {border: 10px solid white; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-box-shadow:0 4px 10px rgba(0,0,0,0.5); -moz-box-shadow:0 4px 10px rgba(0,0,0,0.5); box-shadow:0 4px 10px rgba(0,0,0,0.5);}
+
+.rhino-bullets { position: absolute; bottom: -25px; left: 0; width:100%; margin:0;  z-index: 10; padding:0; text-align:center; }
+.rhino-bullets li { display:inline-block; margin:0 2px; }
+.rhino-bullets li a.rhino-bullet { display: inline-block; width: 5px; height: 5px; cursor: pointer; background: url(../images/transparent_png/white10.png); font-size: 0; line-height:0; text-decoration:none; -webkit-user-select:none; -moz-user-select:none; user-select:none; text-indent:-999%; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;}
+.rhino-bullets li a.rhino-bullet:hover, .rhino-bullets li a.rhino-bullet:focus { background: url(../images/transparent_png/white40.png); }
+.rhino-bullets li a.rhino-bullet.rhino-active-bullet { background: url(../images/transparent_png/white70.png); }
+
+body.light .rhino-btn {border:1px solid #fff;}
+body.light .rhino-prev { background-position:-27px 0;}
+body.light .rhino-next {background-position:0 -27px;}
+body.light .rhino-prev:hover { background-position:0 0; }
+body.light .rhino-next:hover {  background-position:-27px -27px; }
+body.light .rhino-toggle { background-position:0 -54px;  }
+body.light .rhino-toggle:hover {background-position:-27px -54px; }

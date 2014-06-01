@@ -1,0 +1,19 @@
+body { font:13px/1.5 Arial, Helvetica, sans-serif; color:#fff; margin:0;}
+a {color:#FFF; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.3)}
+
+#header { padding:10px; background:rgba(0,0,0,0.7); color:#FFFFFF;}
+h1.logo {text-align:center;}
+
+#content{padding:10px; background:rgba(0,0,0,0.7); margin:20px 10px;}
+
+.search{margin:20px 10px;}
+
+.copyright {text-align:center; padding:15px 0;}
+
+.clear { clear: both; display: block; height: 0; overflow: hidden; visibility: hidden; width: 0;}
+
+.tinynav { display: none; width:90%; margin:0 10px; }
+@media screen and (max-width: 600px) {
+    .tinynav { display: block }
+    ul.horizontal-menu { display: none }
+}

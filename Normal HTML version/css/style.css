@@ -1,0 +1,94 @@
+/* Customize the body's background */
+body
+{
+	background-image:url(../images/patterns/denim.png); /* You can find the patters in images/patterns/ folder */
+	background-color:#222222; /* or choose any color */
+}
+
+/* Customize your logo */
+body #logo
+{
+	background:url(../images/logo_nobg.png) no-repeat center center;
+	width:220px;
+	height:75px;
+	margin-top:40px;
+	background-color:rgba(0,0,0,0.5);  /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+
+/* These fonts use the Google Font. You can add any css selector you want, to use the google font */
+h1, h2, h3, h4, h5, h6, #menu a, #search .inputbox, .hover_effect span.title, .ekho-style .nivo-caption, .quotes blockquote, .to_cart .addtocart
+{
+	font-family: 'Open Sans', 'Helvetica', arial, serif;
+}
+
+/* Customize the Footer */
+#footer
+{
+	height: 60px;
+	background:url(../images/transparent_png/black80.png); /* OLD IE FALLBACK */
+	background: rgba(0, 0, 0, 0.8); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+body.light #footer
+{
+	background:url(../images/transparent_png/white80.png); /* OLD IE FALLBACK */
+	background: rgba(255, 255, 255, 0.8); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+/* Customize the Main's container background */
+#main
+{
+	background:url(../images/transparent_png/black80.png); /* OLD IE FALLBACK */
+	background: rgba(0, 0, 0, 0.8); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+body.light #main
+{
+	background:url(../images/transparent_png/white80.png); /* OLD IE FALLBACK */
+	background: rgba(255, 255, 255, 0.8); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+/* ---- MENU COLORS ------------ */
+
+/* MENU DARK */
+#menu .jt-menu a {
+	color: #c9c9c9;
+	background:url(../images/transparent_png/black90.png); /* OLD IE FALLBACK */
+	background:rgba(0,0,0,0.9); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+#menu .jt-menu a:hover,
+#menu .jt-menu li.active > a {
+	background:#000;
+	color:#fff;
+}
+/* MENU LIGHT */
+body.light #menu .jt-menu a {
+	color: #333;
+	background:url(../images/transparent_png/white90.png); /* OLD IE FALLBACK */
+	background:rgba(255,255,255,0.9); /* RGBA Stands for RED/GREEN/BLUE/ALHPA */
+}
+body.light #menu .jt-menu a:hover,
+body.light #menu .jt-menu li.active > a {
+	background:#fff;
+	color:#111;
+}
+/* ---- end MENU COLORS ------------ */
+
+
+/* Contact Details Widget (From Footer) */
+#contact_details .iconWidgetContainer {
+	width:260px;
+	height:335px;
+	bottom:150px;
+}
+#contact_details .iconWidgetIcon {background-image:url(../images/icon-mappin.png);}
+
+/* Newsletter Widget (From Footer) */
+#newsletter_form .iconWidgetContainer {
+	width:260px;
+	height:220px;
+	bottom:150px;
+}
+#newsletter_form .iconWidgetIcon {background-image:url(../images/icon-mail.png);}
+
+/* FOOTER POSITIONS */
+#footer1 {width:100px;float:left;}
+#footer2 {width:330px;float:left;}
+#footer3 {float:right;}
+#footer4 {float:right;}

@@ -1,0 +1,21 @@
+/* IE Fixes */
+
+.oldie .iconWidgetContainer,
+.oldie .iconWidgetContainer * {zoom:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+
+.oldie #header.vertical #menu .jt-menu > li > a {zoom:1; overflow:visible !important; }
+
+.oldie .social-connect li:hover .bg_over {display:none;}
+
+body.ie7 ul.social_icons li  {float:left;}
+
+body.ie7 #front_centered {width:960px;}
+body.ie7 .livesocial ul.triggers li {float:left;}
+body.ie7 .featured_boxes_carousel .pager {position:relative; margin-left:-20px; display:inline;}
+body.ie7 .social-connect li { background:none; }
+body.ie7 .social-connect li .bg_over {display:none; }
+body.ie7 #main {margin-top:0; top:40px;}
+body.ie7 #main #mainClose {display:none;}
+
+ul.sig-container li {zoom:1;}
+

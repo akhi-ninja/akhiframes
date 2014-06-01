@@ -1,0 +1,26 @@
+#bg{position:fixed; left:585px; top:0; width:100%; height:100%;}
+#bgimg{display:none; cursor:pointer; -ms-interpolation-mode: bicubic;} /* special IE fix for resized images */
+#preloader{position:absolute; z-index:2; width:140px; padding:20px; top:50px; left:50%; background:#000; color:#666; font-family:Helvetica, Arial, sans-serif; font-size:16px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; margin-left:-70px;}
+#preloader img{margin-right:20px;}
+#toolbar{display:inline-block; padding:4px 15px; margin:20px 15px; background:#262626 url(../img/sw_btn_bg.png) repeat-x; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; font-family:Helvetica, Arial, sans-serif; font-size:12px; color:#fff; cursor:pointer;}
+#outer_container{position:relative; margin:0; width:700px; padding:0; z-index:5; background:url(../img/empty.gif);} /* fucking IE needs a background value to understand hover area */
+#customScrollBox{position:relative; background:url(../img/sw_l_bg.png) repeat-y; overflow:hidden;}
+#customScrollBox .container{position:relative; width:585px; top:0; float:left; }
+#customScrollBox .content{clear:both;}
+#customScrollBox a.thumb_link{position:relative; margin:0 0 1px 1px; display:block; float:left;}
+#customScrollBox img{border:none;}
+#customScrollBox a.thumb_link .selected{position:absolute; top:0; left:0; width:145px; height:91px; background:url(../img/sw_thumb_selected.png) no-repeat; display:none;}
+#arrow_indicator{position:absolute; cursor:pointer; width:50px; padding:10px; top:50%; margin-top:-25px; margin-left:-25px; left:50%; background:url(../img/sw_transparent_black_bg.png); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:none;}
+#nextimage_tip{position:fixed; z-index:1; padding:0 20px; line-height:40px; color:#fff; height:40px; top:50%; margin-top:-20px; right:20px; background:url(../img/sw_transparent_black_bg.png); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:none; font-family:Helvetica, Arial, sans-serif;}
+.with_border{border:1px solid #000;}
+.with_shadow{-moz-box-shadow:0 0 40px #000; -webkit-box-shadow:0 0 40px #000; box-shadow:0 0 40px #000;}
+#dragger_container{position:relative; width:30px; height:580px; float:left; margin:10px 0 0 0; background:url(../img/sw_dragger_bg.png) repeat-y center;}
+#dragger{position:absolute; width:30px; height:59px; background:url(../img/round_custom_scrollbar_bg.png) no-repeat center center; cursor:pointer;}
+#outer_container .header_text, #outer_container .footer_text {padding-left:20px; padding-right:20px;}
+#outer_container .footer_text {padding:20px;}
+
+body.light #toolbar{background:#D9D9D9 url(../img/sw_btn_bg_light.png) repeat-x; color:#000;}
+body.light #customScrollBox{background:url(../img/sw_l_bg_light.png) repeat-y;}
+body.light #customScrollBox a.thumb_link .selected{ background:url(../img/sw_thumb_selected_light.png) no-repeat;}
+
+#background {position:static;}

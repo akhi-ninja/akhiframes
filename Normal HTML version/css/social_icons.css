@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Socialico';
+    src: url('../custom_fonts/socialico-webfont.eot');
+    src: url('../custom_fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../custom_fonts/socialico-webfont.woff') format('woff'),
+         url('../custom_fonts/socialico-webfont.ttf') format('truetype'),
+         url('../custom_fonts/socialico-webfont.svg#socialico-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ul.social_icons {margin:0; padding:0; list-style:none;}
+ul.social_icons li {display:inline; margin:0; padding:0; line-height:1 ;}
+ul.social_icons li a {font-family: 'Socialico', 'Helvetica', Arial, sans-serif; text-decoration:none; display:inline-block; text-align:center; margin:0; float: left;}
+
+/* Icons Sizes */
+ul.social_icons li a {font-size: 36px; width: 36px; height: 36px; line-height: 36px;}
+
+/* Icons Colors */
+ul.social_icons.colorBlack li a {color:#000}
+ul.social_icons.colorWhite li a {color:#FFF}
+body.light ul.social_icons li a {background-color:#FFF}
+body.dark ul.social_icons li a {background-color:#000}
+
+body ul.social_icons li a.social_iconF:hover {background-color: #436EAC;}		 /* FACEBOOK */
+body ul.social_icons li a.social_iconL:hover {background-color: #0598C9;}		 /* TWITTER */
+body ul.social_icons li a.social_iconD:hover {background-color: #DB4780;}		 /* DRIBBBLE */
+body ul.social_icons li a.social_iconPin:hover {background-color: #CB2028;}		 /* PINTEREST */
+body ul.social_icons li a.social_iconA:hover {background-color: #E47911;}		 /* Amazon */
+body ul.social_icons li a.social_iconB:hover {background-color: #EE1010;}		 /* Bebo */
+body ul.social_icons li a.social_iconC:hover {background-color: #777777;}		 /* AppStore */
+body ul.social_icons li a.social_iconE:hover {background-color: #005DFF;}		 /* Behance */
+body ul.social_icons li a.social_iconG:hover {background-color: #405A6A;}		 /* Github */
+body ul.social_icons li a.social_iconH:hover {background-color: #00AFF0;}		 /* Skype */
+body ul.social_icons li a.social_iconI:hover {background-color: #39C;}		 	/* Linkedin */
+body ul.social_icons li a.social_iconJ:hover {background-color: #516457;}		 /* Deviantart */
+body ul.social_icons li a.social_iconK:hover {background-color: #333333;}		 /* Bing */
+body ul.social_icons li a.social_iconM:hover {background-color: #FFFF33;}		 /* Myspace */
+body ul.social_icons li a.social_iconN:hover {background-color: #FF0084;}		 /* Flickr */
+body ul.social_icons li a.social_iconO:hover {background-color: #2C4762;}		 /* Tumblr */
+body ul.social_icons li a.social_iconP:hover {background-color: #084482;}		 /* Paypal */
+body ul.social_icons li a.social_iconQ:hover {background-color: #A82400;}		 /* Quora */
+body ul.social_icons li a.social_iconR:hover {background-color: #F8731E;}		 /* RSS */
+body ul.social_icons li a.social_iconS:hover {background-color: #F8731E;}		 /* Stumble Upon */
+body ul.social_icons li a.social_iconT:hover {background-color: #0598C9;}		 /* Twitter */
+body ul.social_icons li a.social_iconU:hover {background-color: #F26300;}		 /* Blogger */
+body ul.social_icons li a.social_iconV:hover {background-color: #44BBFF;}		 /* Vimeo */
+body ul.social_icons li a.social_iconW:hover {background-color: #04A4CC;}		 /* Wordpress */
+body ul.social_icons li a.social_iconX:hover {background-color: #C9322C;}		 /* Youtube */
+body ul.social_icons li a.social_iconY:hover {background-color: #7E069B;}		 /* Yahoo! */
+body ul.social_icons li a.social_iconGpl:hover {background-color: #d44837;}		 /* Google Plus */
+
+/* LETTERS ASSOCIATED TO ICONS 
+	"Amazon" => "A",
+	"Bebo" => "B",
+	"AppStore" => "C",
+	"Dribbble" => "D",
+	"Behance" => "E",
+	"Facebook" => "F",
+	"Github" => "G",
+	"Skype" => "H",
+	"Linkedin" => "I",
+	"Deviantart" => "J",
+	"Bing" => "K",
+	"Myspace" => "M",
+	"Flickr" => "N",
+	"Tumblr" => "O",
+	"Paypal" => "P",
+	"Pinterest" => "{",
+	"Quora" => "Q",
+	"RSS" => "R",
+	"Stumble Upon" => "S",
+	"Twitter" => "T",
+	"Twitter 2" => "L",
+	"Blogger" => "U",
+	"Vimeo" => "V",
+	"Wordpress" => "W",
+	"Youtube" => "X",
+	"Yahoo!" => "Y",
+	"AIM" => "Y"
+/*

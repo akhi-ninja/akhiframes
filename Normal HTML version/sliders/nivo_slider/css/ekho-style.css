@@ -1,0 +1,84 @@
+/*
+Skin Name: Nivo Slider Default Theme
+Skin URI: http://nivo.dev7studios.com
+Skin Type: flexible
+Description: The default skin for the Nivo Slider.
+Version: 1.2
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+*/
+
+.ekho-style .nivoSlider {
+	position:relative; z-index:1;
+	background:url(../images/loading.gif) no-repeat 50% 50%;
+}
+body.dark #slideshow {background:url(../images/loading_dark.gif) no-repeat 50% 50%;}
+body.light #slideshow {background:url(../images/loading_light.gif) no-repeat 50% 50%;}
+.ekho-style .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.ekho-style .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.ekho-style .nivo-controlNav {
+	text-align: center;
+	padding: 0;
+	margin-top:0px;
+bottom: -20px;
+position: relative;
+}
+
+.ekho-style .nivo-controlNav a {width: 10px; height: 10px; display: inline-block; cursor: pointer; text-indent: -9999px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); opacity:.7; border:0; margin: 0 5px;}
+body.dark .ekho-style .nivo-controlNav a {background:#000;}
+body.light .ekho-style .nivo-controlNav a {background:#fff;}
+.ekho-style .nivo-controlNav a:hover ,
+.ekho-style .nivo-controlNav a.active {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); opacity:1;}
+.ekho-style .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+
+.ekho-style .nivo-directionNav a {width: 39px; height: 39px; display: block; text-indent:-9999px; border:0; background: url(../images/slider4_controls.png); background-repeat: no-repeat ; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; margin:-19px 0 0 0;
+-webkit-transition: background-position 0.15s ease-in; -moz-transition: background-position 0.15s ease-in; -ms-transition: background-position 0.15s ease-in; transition: background-position 0.15s ease-in;}
+body.dark .ekho-style a.nivo-nextNav,
+body.light .ekho-style a.nivo-nextNav:hover {background-position: -39px 0; right: 0;}
+body.light .ekho-style a.nivo-nextNav,
+body.dark .ekho-style a.nivo-nextNav:hover {background-position: 0 0; right: 0;}
+body.dark .ekho-style a.nivo-prevNav,
+body.light .ekho-style a.nivo-prevNav:hover {background-position: 0 -39px; left: 0;}
+body.light .ekho-style a.nivo-prevNav,
+body.dark .ekho-style a.nivo-prevNav:hover {background-position: -39px -39px; left: 0;}
+
+.ekho-style .nivo-caption {background: rgba(0, 0, 0, .3);color: white;text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);font-size: 20px;line-height: 18px;bottom: 15px; padding: 2%; }
+
+.ekho-style .nivo-caption a:hover {
+    color:#fff;
+}
+
+.ekho-style .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+	position:relative;
+	z-index:2;
+	margin-top: -90px;
+	bottom:-100px;
+}
+.ekho-style .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 0;
+}
+.ekho-style .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+body.dark #front_centered.noMainboxes #slideshow {border:10px solid #000;}
+body.light #front_centered.noMainboxes #slideshow {border:10px solid #FFF;}
+
+#front_centered.noMainboxes #slideshow {margin-top:-230px; height:400px; width:960px; }

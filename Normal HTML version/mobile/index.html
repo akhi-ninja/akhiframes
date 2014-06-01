@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Ekho Template - Simple Mobile version</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body>
+
+
+<div id="header">
+	<h1 class="logo"><a href="index.html">EKHO TEMPLATE</a></h1>
+
+    <ul class="horizontal-menu">
+        <li><a href="#" class="selected">Home</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+
+
+<div id="content">
+	<p>This is a basic html coded page, compatible with mobile devices. It's purpose is to server a highly lightweight version of the normal template. As you can see there are only basic tags but it's a great start for you to fill with content.</p>
+	
+    <h2><a href="index.html">Duis laoreet fermentum</a></h2>
+    <p>Praesent leo ipsum, dignissim a sagittis vel amet...</p>
+    
+    <h2><a href="index.html">Praesent sed purus ante</a></h2>
+	<p>Praesent sed purus ante, posuere placerat ante. Sed tristique, tortor eu tempus sagittis, nisl ipsum porttitor ipsum, eu fermentum nisi nisl non libero.</p>
+	<div class="clear"></div>
+</div>
+
+
+<!-- search -->
+<div id="search">
+	<!---  BEGIN Search Script  --->
+	<script type="text/javascript">
+    //-----------------------------------------------------------------------------------
+    //  Specify your domain below. The search results will only be made for your website
+    var domainroot="http://hogash.com/demo/ekho_html/"
+    //-----------------------------------------------------------------------------------
+    function Gsitesearch(curobj){
+    	curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+    }
+    </script>
+    <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)" target="_blank">
+        <div class="search">
+        	<input name="q" type="hidden" />
+            <input name="qfront" maxlength="20" class="inputbox" type="text" size="20" value="SEARCH ..." onblur="if (this.value=='') this.value='SEARCH ...';" onfocus="if (this.value=='SEARCH ...') this.value='';" />
+            <input type="submit" value="go" class="button"/>
+        </div>
+    </form>
+</div><!-- end search -->
+
+
+<p class="copyright">&copy; Copyright 2012 Ekho Template. All rights reserved.<br>
+<a href="http://hogash.com/demo/ekho_html/?noredirection=true">Exit mobile version</a></p>
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery-1.7.2.min.js">\x3C/script>')</script>
+<script src="../js/jquery.noconflict.js" type="text/javascript"></script>
+
+<!-- nav js -->
+<script src="js/nav.js" type="text/javascript"></script>
+<script>
+  (function ($) {
+    $(".horizontal-menu").tinyNav();
+  })(jQuery);
+</script>
+
+<!-- background script -->
+<script type = "text/javascript" src="../js/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+(function($){
+	// trigger the Fullscreen background
+	$.backstretch("../images/colorPulse_V4.jpg");
+})(jQuery);
+</script>
+
+</body>
+</html>

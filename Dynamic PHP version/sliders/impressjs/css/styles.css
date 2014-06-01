@@ -1,0 +1,52 @@
+.no-support-message { display:none; }
+.impress-not-supported .no-support-message { display:block; }
+
+#impress {z-index:1;}
+.step { position: relative; width: 900px; height:400px; padding: 0; margin: 0 auto; width:980px; height:450px; 
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
+
+#hint {position:absolute; bottom:100px; left:50%; width:960px; margin-left:-480px; text-align:center;}
+
+/* Async styles */
+body .impress_list li {line-height: 45px; background-position: left center; font-size: 16px; margin: 0; border-top: 1px dotted  rgba(255, 255, 255, 0.2);  color:#fff;}
+body .impress_list li:first-child {border-top:0;}
+
+.impress_gallery > p {margin:0;}
+.impress_gallery > ul {margin: 40px 0 0 0; padding: 0; overflow: visible;}
+.impress_gallery ul li {margin: 5px; float: left; padding: 0; list-style: none;}
+.impress_gallery li a,
+.impress_gallery li a:hover {width:270px;}
+.impress_gallery li a img {border: 1px solid #353535; padding: 4px; background: #000;  -webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px;
+-webkit-transition:all 150ms ease-in; -moz-transition:all 150ms ease-in; -o-transition:all 150ms ease-in; transition:all 150ms ease-in;   }
+.impress_gallery li a img:hover {border: 1px solid #555; padding: 4px; background: #222; -webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.7); -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.7); box-shadow:0 0 8px rgba(0, 0, 0, 0.7); }
+.impress_gallery li a img,
+.impress_gallery li a:hover img {width:250px;  height:auto ;}
+
+/* slides styling - slide 1 */
+.step01 .img1 { position: absolute; top: 80px; left: 570px; width: 354px; height: 264px; z-index: 1; }
+.step01 .img2 { position: absolute; top: 0px; left: 350px; width: 342px; height: 380px; z-index: 1; }
+.step01 .title {position: absolute; font-weight: bold; top: 40px; left: 0px; width: 350px; text-align: left; font-size: 36px; color: white; z-index: 1; }
+.step01 .subtitle {position: absolute; font-weight: normal; top: 80px; left: 0px;width: 350px; text-align: left; font-size: 20px; color: white; z-index: 1;}
+.step01 .desc { position: absolute; font-weight: normal; top: 180px; left: 0px; width: 310px; text-align: left; font-size: 13px; color: white; z-index: 1; }
+.step01 .button {position: absolute; top: 310px; left: 0px; width: 120px;} 
+
+/* slides styling - slide 2 */
+.step02 .right { top: 70px; left: 420px; width: 540px; height: 310px; height: 310px; position: absolute; }
+.step02 .left { top: 80px; left: 0px; width: 360px; position: absolute; }
+.step02 .title {position: absolute; font-weight: normal; top: 0px; left: 0px; width: 960px; text-align: left; font-size: 30px; color: white; z-index: 1;}
+.step02 .impress_list {position: relative; }
+.step02 .impress_list li {line-height: 45px; background-position: left center; font-size: 16px; margin: 0; border-top: 1px dotted  rgba(255, 255, 255, 0.2);  color:#fff;}
+.step02 .impress_list li:first-child {border-top:0;}
+.step02 .button {position: absolute; top: 340px; left: 0px; width: 120px;}
+
+/* slides styling - slide 3 */
+.step03 .img1 {position: absolute; top: 10px; left: 0px; width: 358px; height: 369px; z-index: 1;}
+.step03 .right {position: absolute; top: 10px; left: 400px; width: 600px; height: 400px; z-index: 1010;}
+.step03 .or {width: 70px; height: 35px; position: relative; z-index: 1010; left: 0px; top: 0px;}
+
+/* slides styling - slide 4 */
+.step04 .title {position: absolute; font-weight: normal; top: 0px; left: 445px; width: 530px; text-align: left; font-size: 30px; color: white; z-index: 1;}
+.step04 .img1 {position: absolute; top: 30px; left: 0px; width: 370px; height: 324px; z-index: 1;}
+.step04 .right {top: 10px; left: 440px; width: 540px; height: 400px; position:absolute;}
+
+#background{z-index:0;}
