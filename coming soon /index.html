@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<title>FULL - Coming Soon HTML/CSS Template</title>
+<link rel="shortcut icon" href="images/fav_icon.png" type="image/x-icon" />
+<link rel="icon" href="images/fav_icon.png" type="image/x-icon" />
+
+<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:700' rel='stylesheet' type='text/css'>
+
+<link media="screen,projection" rel="stylesheet" type="text/css" href="styles/screen.css">
+<link media="print" rel="stylesheet" type="text/css" href="styles/print.css">
+<link rel="stylesheet" href="styles/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="styles/supersized.shutter.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.easing.min.js"></script>
+<script type="text/javascript" src="scripts/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="scripts/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="scripts/countdown.js"></script>
+<script type="text/javascript" src="scripts/global.js"></script>
+	
+<script type="text/javascript">	
+	jQuery(function($){
+		$.supersized({
+			// Functionality
+			slide_interval      :   10000,		// Length between transitions
+			transition          :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed	:	700,		// Speed of transition
+			// Components							
+			slide_links			:	false,	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			slides 				:  	[	// Slideshow Images
+										{image : 'images/bg/bg_01.jpg', title : ''},
+										{image : 'images/bg/bg_02.jpg', title : ''},
+										{image : 'images/bg/bg_03.jpg', title : ''},
+										{image : 'images/bg/bg_04.jpg', title : ''}
+									]
+			
+		});
+	});
+</script>
+
+</head>
+<body>
+	<h1 id="logo"><a href="/works/full/"><img src="images/logo.png" alt="FULL - Coming Soon HTML/CSS Template" /></a></h1>
+
+	<div id="main">
+		<div id="mainContent">
+			<div id="contentLeft"></div>
+			<div id="contentRight"></div>
+			<div id="content">
+				
+				<div id="progressbar">100</div><!--progressbar-->
+				<div class="bubble"></div>
+				
+				<div class="leftArea">
+					<div class="border">
+						<h2>Our website is <span>Under Construction!</span></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna lectus, egestas ut semper a, egestas eu nisl. In fringilla nisi interdum tellus accumsan sollicitudin. Suspendisse lacinia scelerisque turpis vel fringilla. Quisque vitae augue sapien.</p>
+						
+						<ul id="countdown" class="clearfix" title="30 april 2015 12:00:00">
+							<li><div><span class="days">00</span><p>DAYS</p></div></li>
+							<li><div><span class="hours">00</span><p>HOURS</p></div></li>
+							<li><div><span class="minutes">00</span><p>MINUTES</p></div></li>
+							<li><div><span class="seconds">00</span><p>SECONDS</p></div></li>
+						</ul><!--countdown-->
+						
+						<form class="notifyForm clearfix">
+							<input name="email" class="notifyText" type="text" value="enter your email address ..." />
+							<input class="notifySubmit" type="button" value="NOTIFY ME" />
+						</form>
+						<!--notifyForm-->
+						
+					</div><!--border-->
+					<div class="msg ok"><span>Thank you. Your email address added into the system.</span></div>
+					<div class="msg error"><span>Please enter valid email address!</span></div>
+					<div class="msg error2"><span>We couldn't add your email to aour system! Please try again later.</span></div>
+					<div class="msg sending"><span>Sending...</span></div>
+					
+				</div><!--leftArea-->
+				
+				<div class="rightArea">
+						<a class="twitter-timeline" href="https://twitter.com/envato" data-widget-id="359266926641418243"></a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div><!--rightArea-->
+				
+			</div><!--content-->
+		</div><!--mainContent-->
+	</div><!--main-->
+
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+</body>
+</html>

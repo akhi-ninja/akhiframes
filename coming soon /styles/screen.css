@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(reset.css);
+
+
+/* MIX */
+body {overflow-x:hidden;color:#848484;font-family:Arial, Tahoma, Verdana, sans-serif;}
+h1#logo {text-align:center;}
+h2 { font-size:26px; font-weight:bold; margin-bottom:15px;text-align:center;font-family: 'Archivo Narrow', Arial, Tahoma, Verdana, sans-serif;}
+h2 span {color:#8caf2f;}
+p {font-size:14px;text-align:justify;line-height:20px;}
+
+
+/* MAIN CONTENT */
+#main {background: url("../images/bg_content.png") repeat scroll 0 0 transparent;height: 385px;margin-top: -165px;position: fixed;top: 50%;width: 100%;}
+#main #mainContent {height: 385px;margin: 0 auto;position: relative;width: 980px;}
+#main #mainContent #contentLeft {background: url(../images/bg_page_content_left.png) no-repeat;height: 385px;left: -164px;position: absolute;width: 164px;}
+#main #mainContent #content {background: url(../images/bg_page_content.png) repeat;height: 385px;margin: 0 auto;position: relative;width: 980px;}
+#main #mainContent #contentRight {background:url(../images/bg_page_content_right.png) no-repeat;height:385px;position: absolute;right:-164px;width:164px;}
+
+
+/* areas */
+#main #mainContent #content .leftArea {float:left;width:60%;padding:5% 0 5% 5%;}
+#main #mainContent #content .leftArea .border {padding-right:5%;border-right:1px solid #8caf2f;text-align:center;}
+#main #mainContent #content .rightArea {float:left;width:32%;padding:5% 0 5% 3%;}
+#main #mainContent #content .rightArea ul#twitter li {font-size:12px;margin-bottom:10px;}
+#main #mainContent #content .rightArea ul#twitter li a {color:#8caf2f;}
+
+
+/* email form submit */
+.notifyForm {margin-top:20px;display:inline-block;}
+.notifyText {outline:none;color:#848484;font-size:14px;padding:10px;margin:4px 0 0 10px;width:250px;float:left;border:1px solid #8caf2f;background:none;-webkit-border-top-left-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-bottomleft: 5px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.notifySubmit {border:1px solid #617921;cursor:pointer;color:#fff;font-size:14px;float:left;padding:9px 13px 10px 13px;margin:3px 0 0 -1px;-webkit-border-top-right-radius: 5px;-webkit-border-bottom-right-radius: 5px;-moz-border-radius-topright: 5px;-moz-border-radius-bottomright: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;
+background: #8caf2f;
+background: -moz-linear-gradient(top,  #8caf2f 0%, #617921 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8caf2f), color-stop(100%,#617921));
+background: -webkit-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+background: -o-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+background: -ms-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+background: linear-gradient(to bottom,  #8caf2f 0%,#617921 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8caf2f', endColorstr='#617921',GradientType=0 );
+}
+.notifySubmit:hover {
+background: #617921;
+background: -moz-linear-gradient(top,  #617921 0%, #8caf2f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#617921), color-stop(100%,#8caf2f));
+background: -webkit-linear-gradient(top,  #617921 0%,#8caf2f 100%);
+background: -o-linear-gradient(top,  #617921 0%,#8caf2f 100%);
+background: -ms-linear-gradient(top,  #617921 0%,#8caf2f 100%);
+background: linear-gradient(to bottom,  #617921 0%,#8caf2f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617921', endColorstr='#8caf2f',GradientType=0 );
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .notifySubmit {padding-top:11px;}
+}
+
+/* form messages */
+.msg {margin-top:8px;font-weight:bold;font-size:14px;display:none;text-align:center;color:#8caf2f;padding:0 30px;}
+
+/* bottom left social links */
+.socialLinks { margin-top:15px;}
+.socialLinks ul li { float:left; margin-right:5px;width:26px;height:26px;}
+.socialLinks ul li a {color:#fff;font-weight:bold;display:block;text-indent:-9999px;width:26px;height:26px;background-position:left top;background-repeat:no-repeat;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;-ms-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.socialLinks ul li a:hover {background-position:left bottom;}
+
+/* countdown */
+#countdown {display:inline-block;margin-top:20px;}
+#countdown li {float:left;text-align:center;margin-right:30px;}
+#countdown li span {font-size:50px;color:#848484;font-family: 'Archivo Narrow', Arial, Tahoma, Verdana, sans-serif;}
+#countdown li p {font-size:13px;text-align:center;margin-top:2px;margin-top:16px\9;font-family: 'Archivo Narrow', Arial, Tahoma, Verdana, sans-serif;}
+
+/* progressbar */
+#progressbar {width:0;height:3px;background:#8caf2f;}
+.bubble {display:none;position:absolute;-moz-border-radius:75px;-webkit-border-radius: 75px;border-radius: 75px;padding:5px 7px;top:-13px;text-align:center;color:#fff;
+	/* css3 */
+	background: #8caf2f;
+	background: -moz-linear-gradient(top,  #8caf2f 0%, #617921 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8caf2f), color-stop(100%,#617921));
+	background: -webkit-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+	background: -o-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+	background: -ms-linear-gradient(top,  #8caf2f 0%,#617921 100%);
+	background: linear-gradient(to bottom,  #8caf2f 0%,#617921 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8caf2f', endColorstr='#617921',GradientType=0 );
+}
+
+
+/* CHANGE COLORS */
+
+/* green */
+/* normal: 8caf2f - hover: 617921 */
+
+
+
+/* dark blue */
+/* normal: 196394 - hover: 0f3c5a */
+
+
+
+/* light blue */
+/* normal: 8fb3c9 - hover: 568cad */
+
+
+
+/* red */
+/* normal: da3d3d - hover: b12222 */
+
+
+
+/* pink */
+/* normal: f56991 - hover: f12962 */
+
+
+
+/* yellow */
+/* normal: f1da1e - hover: bfac0c */
+
+
+
+/* orange */
+/* normal: ff9f80 - hover: ff6c3c */
+
+
+/* grey */
+/* normal: eeeeee - hover: bababb */
+
+
+
+/* purple */
+/* normal: b518b9 - hover: 89128c */
+
+
+
+/* brown */
+/* normal: aa6558 - hover: 7e4a40 */
