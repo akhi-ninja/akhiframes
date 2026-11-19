@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/terminal.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

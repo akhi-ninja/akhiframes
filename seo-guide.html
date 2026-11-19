@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Build an SEO-Friendly Website with MYC.DEV | Akhil Gopinath</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><div class="wrap nav"><a class="brand" href="./"><span>AG</span> Akhil Gopinath</a></div></header>
+<main class="wrap reading section"><a href="./#writing" class="text-link">← Back to portfolio</a>
+<p class="eyebrow" style="margin-top:2rem"><i></i> Guide by Akhil Gopinath</p><h1>How to Build an SEO-Friendly Website with MYC.DEV</h1><p>The first prompt you give MYC.DEV can shape how easily customers find
+what they need. If you’re building a coffee shop website, someone
+looking for the menu should land on a page with drinks and prices.
+Someone looking for opening hours should find the address and hours on a
+dedicated Visit page.</p>
+<p>In this walkthrough, we’ll build a new site for <strong>Maple &amp;
+Mug Coffee</strong>, a fictional shop in St. Charles, Missouri. You can
+adapt the same steps to a service business, portfolio, or online
+store.</p>
+<h2 id="1-plan-your-pages-around-customer-questions">1. Plan your pages
+around customer questions</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Customer question</th>
+<th>Page</th>
+<th>What to put on it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>What kind of coffee shop is this?</td>
+<td>Home, <code>/</code></td>
+<td>A short introduction, the city, and links to Menu and Visit</td>
+</tr>
+<tr class="even">
+<td>What can I order and what does it cost?</td>
+<td>Menu, <code>/menu</code></td>
+<td>Drinks, prices, and seasonal specials as readable text</td>
+</tr>
+<tr class="odd">
+<td>When are you open and how do I get there?</td>
+<td>Visit, <code>/visit</code></td>
+<td>Hours, street address, directions, and contact details</td>
+</tr>
+</tbody>
+</table>
+<p>Use the pages your customers actually need. For a service business,
+your main service could have its own page with the service area, what’s
+included, and how to book.</p>
+<h2 id="2-include-seo-requirements-in-your-first-mycdev-prompt">2.
+Include SEO requirements in your first MYC.DEV prompt</h2>
+<p>Start a new website project in <a
+href="https://myc.dev/">MYC.DEV</a>. Paste the prompt below and replace
+the example business and pages with your own details.</p>
+<blockquote>
+<p>Build a mobile-friendly website for Maple &amp; Mug Coffee, an
+independent coffee shop in St. Charles, Missouri. Create a homepage at
+/, a menu page at /menu, and a visit page at /visit.</p>
+<p>On the homepage, describe the shop and link to Menu and Visit. On the
+menu page, display the menu items and prices I provide as readable text,
+grouped by drink type. On the visit page, show the address, hours, and
+contact details I provide. Flag any missing business details for me to
+fill in before publishing.</p>
+<p>Give each public page a distinct page title, a concise meta
+description, and a descriptive main heading. Use descriptive navigation
+links and meaningful alt text for images that convey information.</p>
+<p>Set up an XML sitemap for the public pages and a robots.txt file that
+allows those pages to be crawled. Use my preferred live domain for the
+sitemap and canonical URLs when I provide it. Make the main page content
+available without a login or an interaction.</p>
+</blockquote>
+<p>A page title identifies the page in the browser and can influence the
+title Google shows in search. A meta description summarizes the page and
+may be used as the search snippet. Give each page its own title and
+description so they reflect what the visitor will actually find. <a
+href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google’s
+SEO Starter Guide</a></p>
+<h2 id="3-review-the-generated-site-before-publishing">3. Review the
+generated site before publishing</h2>
+<p>Use the MYC.DEV preview to open each page, check the navigation, and
+review the layout on mobile. Replace placeholder business details with
+verified information.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Menu page element</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Page title</td>
+<td>Coffee Menu in St. Charles · Maple &amp; Mug</td>
+</tr>
+<tr class="even">
+<td>Main heading</td>
+<td>Maple &amp; Mug Coffee Menu</td>
+</tr>
+<tr class="odd">
+<td>Meta description</td>
+<td>Explore espresso drinks and seasonal specials at Maple &amp; Mug
+Coffee in St. Charles. See the menu and prices.</td>
+</tr>
+<tr class="even">
+<td>Link from Home</td>
+<td>View the coffee menu</td>
+</tr>
+</tbody>
+</table>
+<p>If the menu appears as an image, refine the generated project with a
+follow-up prompt.</p>
+<blockquote>
+<p>In this project, display the menu items and prices as readable text
+on /menu using the details I provide. Keep the existing visual style,
+and add a “View the coffee menu” link from the homepage.</p>
+</blockquote>
+<h2 id="4-publish-and-verify-your-website">4. Publish and verify your
+website</h2>
+<p>Publish your website and open it in a browser. Check that the public
+pages work on your live domain and that <code>/sitemap.xml</code> lists
+the right live URLs. Open <code>/robots.txt</code> and check that your
+intended public pages can be crawled.</p>
+<p>Then verify your website in <a
+href="https://search.google.com/search-console/">Google Search
+Console</a>.</p>
+<ol type="1">
+<li>Open <strong>Sitemaps</strong> and submit the live sitemap URL.</li>
+<li>Paste a priority page’s full URL into <strong>URL
+Inspection</strong>.</li>
+<li>Select <strong>Test Live URL</strong> to check whether Google can
+access the page.</li>
+<li>Request indexing for a newly published priority page. Google decides
+when and whether to index it.</li>
+</ol>
+<p>Once data is available, use Search Console’s
+<strong>Performance</strong> report to see which searches generate
+impressions and clicks. If visitors find your site by searching for
+opening hours, make those hours easy to spot on your Visit page. <a
+href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">Google’s
+sitemap guide</a> · <a
+href="https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl">Google’s
+indexing guide</a> · <a
+href="https://developers.google.com/search/docs/monitor-debug/search-console-start/">Google’s
+Search Console guide</a></p>
+<p>Start your next project in <a href="https://myc.dev/">MYC.DEV</a>
+with the pages, content, and SEO requirements your site needs from day
+one.</p>
+</main></body></html>
