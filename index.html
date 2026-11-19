@@ -32,9 +32,9 @@
 <div class="titlebar"><i aria-hidden="true"></i> Portfolio terminal <span>Type help or choose a shortcut</span></div>
 <div class="terminal-body">
 <nav class="commands" aria-label="Quick commands">
-<a href="#projects" data-command="projects">./projects</a><a href="#experience" data-command="experience">./experience</a><a href="#writing" data-command="writing">./writing</a><a href="#contact" data-command="contact">./contact</a>
+<a href="#projects" data-command="projects">./projects</a><a href="#experience" data-command="experience">./experience</a><a href="#writing" data-command="writing">./writing</a><a href="#contact" data-command="contact">./contact</a><a href="#labs" data-command="labs">./labs</a>
 </nav>
-<form id="prompt" hidden><label for="command">visitor@akhiframes:~$</label><input id="command" name="command" placeholder="Type help" autocomplete="off" autocapitalize="off" spellcheck="false"><button>Run</button></form>
+<form id="prompt" hidden><label for="command">visitor@akhiframes:~$</label><input id="command" name="command" placeholder="Type help or labs" autocomplete="off" autocapitalize="off" spellcheck="false"><button>Run</button></form>
 <p id="status" role="status"></p>
 <div id="output">
 <section id="projects">
@@ -60,8 +60,30 @@
 <li><a href="seo-guide.html">How to Build an SEO-Friendly Website with MYC.DEV →</a><p>A walkthrough for planning page structure, search metadata, and a sitemap.</p></li>
 </ul></section>
 <section id="contact"><h2>Contact</h2><p>Get in touch about enterprise architecture, AI products, or technical collaboration.</p><a class="file-link" href="mailto:akhilgopinath@gmail.com">Email Akhil ↗</a></section>
-<section id="help" hidden><h2>Available commands</h2><p><code>projects</code>, <code>experience</code>, <code>writing</code>, <code>contact</code>, <code>whoami</code>, <code>help</code>, <code>clear</code></p></section>
+<section id="labs">
+<h2>Security labs</h2>
+<p>Practice with fictional data directly in your browser.</p>
+<details class="lab">
+<summary>Investigate failed sign-ins</summary>
+<p>Which account shows a repeated failure pattern?</p>
+<pre><code>09:01  editor  success
+09:02  admin   failed
+09:02  admin   failed
+09:03  reader  success
+09:03  admin   failed</code></pre>
+<details><summary>Reveal finding</summary><p>The admin account had three failures in about a minute. Review the surrounding sign-in events and correlate the failures with other activity before concluding what caused them.</p></details>
+</details>
+<details class="lab">
+<summary>Review browser security headers</summary>
+<p>Which header tells the browser to block framing by other sites?</p>
+<pre><code>Content-Type: text/html
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY</code></pre>
+<details><summary>Reveal finding</summary><p><code>X-Frame-Options: DENY</code> blocks the page from being embedded in a frame, including by its own site. This helps protect against clickjacking.</p></details>
+</details>
+</section>
+<section id="help" hidden><h2>Available commands</h2><p><code>projects</code>, <code>experience</code>, <code>writing</code>, <code>contact</code>, <code>labs</code>, <code>whoami</code>, <code>help</code>, <code>clear</code></p></section>
 </div></div></section>
 </main>
-<footer class="bar"><span>© 2026 Akhil Gopinath</span><div><a href="https://github.com/akhi-ninja">GitHub ↗</a><a href="https://medium.com/@akhiphotography">Medium ↗</a><a href="https://www.akhiframes.com/">Akhiframes ↗</a></div></footer>
+<footer class="bar"><span>© 2026 Akhil Gopinath</span><div><a href="https://github.com/akhi-ninja">GitHub ↗</a><a href="https://medium.com/@akhiphotography">Medium ↗</a></div></footer>
 </body></html>
