@@ -41,3 +41,8 @@ main{padding-top:clamp(24px,4vw,52px)}
 .lab summary{cursor:pointer;color:var(--green);font-weight:700}
 .lab p{margin-top:8px;color:var(--muted)}
 .lab pre{margin:10px 0;padding:10px;background:var(--bg);white-space:pre-wrap;overflow-wrap:anywhere}
+
+.writing-header{padding:clamp(20px,4vw,40px);border:1px solid var(--line);border-radius:12px;background:linear-gradient(115deg,#142b1d,var(--panel))}
+.writing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:22px}
+.writing-grid article{display:flex;flex-direction:column;gap:12px;padding:clamp(16px,3vw,25px);border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.writing-grid h2{margin:0}.writing-grid p{color:var(--muted)}.writing-grid .writing-source{color:var(--green);font-size:.77em}.writing-grid a{align-self:flex-start;margin-top:auto}
